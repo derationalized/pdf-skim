@@ -1,0 +1,10 @@
+{
+  "id": "pdf-skim",
+  "name": "pdf-skim",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "Narrates technical PDFs (papers, dissertations, textbooks) with a local, OS-agnostic TTS engine, filtering out boilerplate, citations, and captions so dense material actually flows when spoken.",
+  "author": "derationalized",
+  "authorUrl": "https://github.com/derationalized",
+  "isDesktopOnly": true
+}

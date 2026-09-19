@@ -1,0 +1,1 @@
+Each subfolder here is one downloaded speech model (see README.md, "Installation Steps").

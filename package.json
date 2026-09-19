@@ -1,0 +1,13 @@
+{
+  "name": "pdf-skim",
+  "version": "1.0.0",
+  "description": "Obsidian plugin that narrates technical PDFs with a local, OS-agnostic TTS engine, filtering out boilerplate, citations, and captions so dense material actually flows when spoken.",
+  "private": true,
+  "license": "GPL-3.0",
+  "author": "derationalized",
+  "scripts": {
+    "fetch-native-deps": "node scripts/fetch-native-deps.mjs",
+    "fetch-pdfjs": "node scripts/fetch-pdfjs.mjs",
+    "build": "node scripts/hand-bundle.js && node -e \"const fs=require('fs'); fs.copyFileSync('dist-handbuilt/main.js','main.js'); fs.mkdirSync('worker',{recursive:true}); fs.copyFileSync('src/worker/tts-worker.js','worker/tts-worker.js'); fs.copyFileSync('src/worker/model-registry.js','worker/model-registry.js');\""
+  }
+}
